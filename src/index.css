@@ -1,0 +1,11 @@
+ul{
+  list-style-type: none; /* Remove bullets */
+  
+}
+
+button {
+  display: inline-block;
+  
+  font-family: inherit;
+  cursor: pointer;
+}
