@@ -1,11 +1,51 @@
-ul{
-  list-style-type: none; /* Remove bullets */
-  
+/* Reset de margens e preenchimentos globais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-button {
-  display: inline-block;
+/* Estilo específico para o tabuleiro */
+ul {
+  list-style-type: none; /* Remove bullets */
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  align-items: center; /* Centraliza verticalmente */
+  height: 100vh; /* Altura total da viewport */
+  margin: 0; /* Remove margin do body */
+}
+
+.game {
   
+  height: 80vh;
+  display: grid;
+  grid-template-columns: repeat(2, 2fr); /* 3 colunas de igual largura */
+   /* 3 linhas de igual altura */
+  gap: 0; /* Remove espaço entre as células */
+}
+
+.square {
+  border: 1px solid black; /* Adiciona borda sólida */
+  background-color: transparent;
+  width: 60px; /* Ajuste conforme necessário */
+  height: 60px; /* Ajuste conforme necessário */
   font-family: inherit;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px; /* Tamanho da fonte para X e O */
+}
+
+.board-row {
+  display: flex;
+}
+
+.game-info {
+  margin-top: 30px;
+  margin-left: 30px;
 }
